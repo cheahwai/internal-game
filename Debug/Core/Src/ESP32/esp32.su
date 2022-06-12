@@ -1,0 +1,5 @@
+esp32.c:9:6:esp32_Init	16	static
+esp32.c:16:6:esp32StartSend	16	static
+esp32.c:22:6:esp32StopSend	16	static
+esp32.c:27:6:esp32Handler	8	static
+esp32.c:53:5:esp32ProcData	40	static

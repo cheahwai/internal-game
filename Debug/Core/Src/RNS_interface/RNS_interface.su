@@ -1,0 +1,13 @@
+RNS_interface.c:538:6:RNSInit	24	static
+RNS_interface.c:578:6:RNSStop	16	static
+RNS_interface.c:615:6:RNSVelocity	32	static
+RNS_interface.c:639:6:RNSPDC	32	static
+RNS_interface.c:663:6:RNSLFDist	24	static
+RNS_interface.c:685:6:RNSLFJunc	32	static
+RNS_interface.c:705:6:RNSIMURotate	16	static
+RNS_interface.c:734:6:RNSPPstart	128	static
+RNS_interface.c:748:6:RNSPPstart_PS	128	static
+RNS_interface.c:771:6:RNSSendIns	16	static
+RNS_interface.c:805:6:RNSSet	28	static
+RNS_interface.c:896:9:RNSEnquire	16	static
+RNS_interface.c:936:6:RNSSync	16	static

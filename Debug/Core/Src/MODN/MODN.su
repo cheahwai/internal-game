@@ -1,0 +1,11 @@
+MODN.c:34:6:MODNInit	32	static
+MODN.c:58:6:LegacyMODN	24	static
+MODN.c:101:6:realMODN	32	static
+MODN.c:145:6:imuRealMODN	32	static
+MODN.c:215:6:movableRealMODN	32	static
+MODN.c:265:6:autoorientMODN	40	static
+MODN.c:325:6:ApplyMODN	16	static
+MODN.c:342:6:setOrientationMODN	16	static
+MODN.c:347:6:setSpeedMODN	16	static
+MODN.c:353:6:setImuGainMODN	16	static
+MODN.c:357:6:setDelayMODN	16	static

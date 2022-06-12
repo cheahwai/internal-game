@@ -1,0 +1,6 @@
+servo.c:33:6:ServoxInit	56	static
+servo.c:137:6:ServoSetPulse	16	static
+servo.c:160:6:ServoInitAngle	24	static
+servo.c:177:6:ServoSetAngle	16	static
+servo.c:184:6:ServoInitPulseLimit	24	static
+servo.c:188:6:ServoMovePulse	16	static

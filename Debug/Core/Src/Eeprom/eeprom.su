@@ -1,0 +1,3 @@
+eeprom.c:22:10:GetSector	16	static
+eeprom.c:94:10:EepromWriteStruct	56	static
+eeprom.c:144:6:EepromReadStruct	24	static

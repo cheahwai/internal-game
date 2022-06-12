@@ -1,0 +1,115 @@
+TOUCH   emergency stop
+
+//Main task
+SHARE   lagori pile up
+    joyL + L2 + R2  NAVI
+    R1              accelerate
+    OPTION	    reset position
+    CROSS           grip lagori
+    CIRCLE          flip lagori
+    R1_CIRCLE       push lagori
+    TRIANGLE        set lagori servo
+    R1_SQUARE	    retry state
+    SQUARE          release lagory -> ready sate
+    L1 + joyRy      manual pulley by layer
+    UP		    go to north of base
+    DOWN	    go to south of base
+    LEFT	    go to west of base
+    RIGHT	    go to east of base
+    R3		    control of auto adjust + pile
+  
+OPTION  ball pick up
+    //automode
+    TRIANGLE +      //to ball rack A
+        R1      start pprun
+        L1      start pptask
+    SQUARE +        //to ball rack B
+	R1      start pprun
+        L1      start pptask
+    CROSS   stop robot + manual control
+  
+    //manual mode
+    joyL + L2 + R2  NAVI
+    L1              ball cy on/off
+    R1              accelerate
+    joyR_x          yawing ball gripper
+    joyR_y          ball gripper up
+    UP              ball gripper real up
+    DOWN            ball gripper down
+    LEFT            ball gripper turn left
+    RIGHT           ball gripper turn right
+  
+//testing
+CROSS   choose which functional part to test
+CIRCLE  start testing
+    Rjoy            adjust pulse
+    TRIANGLE        set pulse1
+    SQUARE          set pulse2
+    CROSS	    set pulse3
+    R1		    cylinder
+    L1		    adj. pulse of BV, LGF2, PWlift
+    joyL	    PW(lift)
+    L1_joyL	    PW(grip)
+L3      try functional part
+    UP              ball gripper up/down
+    LEFT            ball gripper left/right
+    DOWN            servo lagori gripper no flip
+    L1_DOWN         servo lagori gripper flip/close
+    R1      	    accelerate
+    L1              deccelerate
+    joyRx + L1      PW lagori gripper
+    joyRy           PW lagori lifting
+    L1_CIRCLE       enq control lagori grip
+    L1_CROSS        enq control lagori lift
+    SHARE	    reset enq
+    joyL,L2,R2      NAVI
+    TRIANGLE        ball cy on/off
+    SQUARE          print enq(PW)
+R3      Kalman filter 
+    TRIANGLE        get output
+    SQUARE          print all parameter
+    CIRCLE          update all parameter
+    CROSS           edit parameter
+    UP              X <=> Y
+    RIGHT           mea -> est -> noise -> mea
+    L1/joyR_y       num --
+    R1/joyR_y       num ++ 
+joyRx + L1      PW lagori gripper
+joyRy           PW lagori lifting
+joyL,L2,R2      NAVI
+L1		cylinder
+L1_DOWN		prevent helicopter
+ 
+//tune PID
+R1          speed++
+L1          speed--
+UP          move up
+DOWN        move down
+LEFT        move left
+RIGHT       move right
+CROSS       stop + plot graph
+TRIANGLE    change to tri-omni wheel
+SQUARE      change to fwd-omni wheel
+SHARE       edit PID(by ps4)
+    SQUARE      print PID
+    UP          A -> B -> C -> D
+    DOWN        D -> C -> B -> A
+    RIGHT       P -> I -> D
+    LEFT        D -> I -> P
+    L1          - value
+    R1          + value
+    CIRCLE      update PID
+    TRIANGLE    send PID to RNS + quit editing
+     
+//tune PP  
+R1          path ++
+L1          path --
+CIRCLE      run PP
+TRIANGLE    stick fance
+CROSS       stop + manual NAVI en
+
+//tune stick position
+R1          path ++
+L1          path --
+TRIANGLE    stick position
+CROSS       stop

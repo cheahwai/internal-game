@@ -1,0 +1,35 @@
+cd ~/Documents/granddemo/
+git add .
+git commit -m "sth"
+git push -u origin main
+
+upgrade/correction from grand demo
+- laser usage still not consistance
+- autopiling lagori (analog sensor, imu)
+  -> maybe use pp/other to position the robot near the fance, then use two analog sensor to correct
+  -> try near to the base and not bang to fance
+  -> how to make sure that the robot is normal to the normal (another sensor is needed)
+- motors
+  -> use other motor with high torque for lagori piling (pw slow and easy fuck up - 2 aready die)
+      - faulfabaur, vesc?
+- machanism wise
+  -> 3d print of ball gripper may broken
+  -> slider is not smooth enought (cann't go up smoothly)
+  -> the pulley rope easily come out (may be is because the gripper is blocked by something cause it cannot go down
+                while the pulley is going down)
+  -> bending at lagori gripper
+  -> weight
+  -> ball gripper servo (look vilation at fance when see the robot at other angle
+- programming wise
+  -> bug
+      - after sucess lagori grip, it will auto move up one more layer (lagori size 4 go to level 3)
+      - laser still not straight high chance bank the R1
+      - navi >> sometime will helicopter during start of lagori piling (check back the realMODN code)
+             >> sometime will not go back when pull down ps4.joyL_y
+  -> advise/ ideas that havent added in
+      - use PB1, PB2 to initiate the position of servos instate of using ps4 and button f(x)
+      - remember to derminate the task that handling process ps4 data (lagoritask for seeker and autonomous for hitter)
+      - may try seperate 4 path into several path containing 1 point each
+      - combine release lagori and move back into 1 button (SQUARE)
+      - try DMA UART Rx for recieve datas from RVIZ
+      

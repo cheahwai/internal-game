@@ -1,0 +1,6 @@
+adapter.c:12:6:Initialize	24	static
+adapter.c:152:6:CAN1_RX0_IRQHandler	8	static
+adapter.c:158:6:CAN2_RX1_IRQHandler	8	static
+adapter.c:166:6:CAN_PROCESS	16	static
+adapter.c:200:6:HAL_CAN_RxFifo0MsgPendingCallback	40	static
+adapter.c:383:6:HAL_CAN_RxFifo1MsgPendingCallback	40	static
